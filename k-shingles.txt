@@ -1,0 +1,18 @@
+readinteger<-function()
+{
+  n <- readline(prompt="Enter value of k-1: ")
+  k <- as.integer(n)
+  ul <- readLines("D:/SEM-3 practicals/BI/zzz.txt")
+  Shingle<-0
+  i <- 0
+  while(i<nchar(ul)-k+1)
+    {
+    Shingle[i]<-substr(ul, start=i, stop=i+k)
+    print(Shingle[i])
+    i=i+1
+
+    }
+}
+
+if(interactive())readinteger()
+
